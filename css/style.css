@@ -56,6 +56,7 @@ input::-webkit-slider-thumb {
   -moz-appearance: none;
   appearance: none;
 }
+
 input::-moz-range-thumb {
   border: 0;
   background: linear-gradient(var(--p), var(--p)) 70% 50%/20% 5% no-repeat, linear-gradient(var(--l2), var(--l2)) 70% 50%/20% 15% no-repeat, radial-gradient(100% 100% at 50% 50%, var(--pT) 14%, var(--p) 15% 19%, var(--pT) 20%), var(--l2);
@@ -67,7 +68,6 @@ input::-moz-range-thumb {
   -moz-appearance: none;
   appearance: none;
 }
-
 
 label {
     clip: rect(1px, 1px, 1px, 1px);

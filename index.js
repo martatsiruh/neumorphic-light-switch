@@ -31,7 +31,7 @@ function adjustSlider(event) {
 		thumbPointerMin = 0,
 		thumbPointerMax = 120,
 		thumbPointer = pct * (thumbPointerMax - thumbPointerMin) + thumbPointerMin,
-		
+
 		constantInd = 90.4,
 		constantIndLight = 44.9,
 		//icon pointer green/yellow/red
@@ -42,7 +42,6 @@ function adjustSlider(event) {
 	console.log(`thumbPointer-------${thumbPointer}`);
 	console.log(`thumbHSL-------${thumbHSL}`);
 
-
 	// update the slider shade
 	L.forEach((light,i) => {
 		if (light < 0) 
@@ -50,6 +49,7 @@ function adjustSlider(event) {
 			body.style.setProperty(`--l${i + 1}`, `hsl(228,9.8%,${light}%)`);
 		
 	});
+
 	// update the thumb icon green/yellow/red
 	body.style.setProperty(`--p`,`hsl(${thumbHSL})`);
 	body.style.setProperty(`--pT`,`hsla(${thumbHSL},0)`);
